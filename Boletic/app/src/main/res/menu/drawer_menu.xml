@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item
+                android:checkable="true"
+                android:checked="true"
+                android:id="@+id/nav_reservas"
+                android:icon="@mipmap/ic_launcher"
+                android:title="@string/reservas"
+                />
+            <item
+                android:checkable="true"
+                android:icon="@android:drawable/ic_input_delete"
+                android:title="@string/logout"
+                android:id="@+id/nav_logout"/>
+
+
+
+</menu>

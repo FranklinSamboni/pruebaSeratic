@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Boletic</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login.message.username">Nombre de usuario</string>
+    <string name="login.message.password">Contraseña</string>
+    <string name="login.message.signin">Ingresar</string>
+    <string name="login.message.signup">Registrarse</string>
+    <string name="login_error_message_signin">Error: %s</string>
+    <string name="login.message.name">Nombre</string>
+    <string name="login.message.apellido">Apellido</string>
+    <string name="login.message.phone">Telefono</string>
+    <string name="general_error">Ha ocurrido un error inesperado</string>
+    <string name="reservas">reservas</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2/09/2017 10:44:14 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.example.testSeratic.models.Boleto" table="boleto" catalog="prueba_seratic" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="evento" class="com.example.testSeratic.models.Evento" fetch="select">
+            <column name="id_evento" not-null="true" />
+        </many-to-one>
+        <many-to-one name="tipo" class="com.example.testSeratic.models.Tipo" fetch="select">
+            <column name="id_tipo" not-null="true" />
+        </many-to-one>
+        <property name="valor" type="double">
+            <column name="valor" precision="22" scale="0" not-null="true" />
+        </property>
+        <set name="reservas" table="reserva" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_boleto" not-null="true" />
+            </key>
+            <one-to-many class="com.example.testSeratic.models.Reserva" />
+        </set>
+    </class>
+</hibernate-mapping>
